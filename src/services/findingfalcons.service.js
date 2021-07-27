@@ -31,7 +31,7 @@ export default class falconServices{
 
  getFinalStatus(data){
        console.log(data);
-        return axiosInstance.post('/find',JSON.stringify(data),{
+        return axiosInstance.post('/find',data,{
            headers:{
                 "Accept" : "application/json",
                 "Content-Type": "application/json",
